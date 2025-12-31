@@ -1,0 +1,68 @@
+# REQ.FILE.PROJECT.IDENTITY
+#   Declares the externally visible identity and build surface of this package.
+#   Sections marked CUSTOM are expected to vary by repository.
+
+# ============================================================
+# REQUIRED PROJECT IDENTITY (stable structure, custom values)
+# ============================================================
+
+# REQ.PROJECT.NAME
+#   Canonical package name.
+#   CUSTOM: Must match repository naming.
+name = "GovernanceBoundary"
+
+# REQ.PROJECT.VERSION
+#   Semantic version.
+#   Increment only for externally visible logical changes.
+version = "0.1.0"
+
+# REQ.PROJECT.LICENSE
+#   Open license permitting reuse of formal artifacts.
+license = "MIT"
+
+# REQ.PROJECT.KEYWORDS
+#   Discovery metadata for Lean, GitHub, and academic indexing.
+#   CUSTOM: Adjust to reflect repository scope.
+keywords = [
+  "structural-explainability",
+  "accountability",
+  "semantic-interoperability",
+  "governance-boundary",
+  "provenance",
+  "dependency-graphs",
+  "formal-specification",
+  "formal-verification",
+  "proof-carrying",
+  "theorem-proving",
+  "lean4"
+]
+
+# ============================================================
+# Build configuration
+# ============================================================
+
+# REQ.BUILD.DEFAULT_TARGETS:
+#   Default build surface for lake build command.
+#   MUST include the public library root.
+defaultTargets = ["GovernanceBoundary"]
+
+# ============================================================
+# Libraries provided by this package
+# ============================================================
+
+# REQ.LIB.PUBLIC:
+#   Public Lean library exported by this package.
+#   Downstream users import this namespace directly.
+[[lean_lib]]
+name = "GovernanceBoundary"
+
+# ============================================================
+# Executables
+# ============================================================
+
+# REQ.EXE.VERIFICATION:
+#   Minimal executable used for CI sanity checks and
+#   proof compilation validation.
+[[lean_exe]]
+name = "verify"
+root = "Main"

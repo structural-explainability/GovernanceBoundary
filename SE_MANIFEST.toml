@@ -1,0 +1,59 @@
+schema = "se-manifest-1"
+
+[repo]
+name = "GovernanceBoundary"
+org  = "structural-explainability"
+kind = "formalization"
+status = "reference"
+since = "2025"
+summary = "Lean formalization of the governance boundary for structural explainability."
+
+[layer]
+space = "SE"
+role  = "formal-governance-boundary"
+
+[depends]
+required = [
+  "structural-explainability/spec-se@v1",
+  "structural-explainability/spec-gb@v1",
+]
+optional = []
+
+[provides]
+artifacts = [
+  "ANNOTATIONS.md",
+  "CITATION.cff",
+  "README.md",
+  "SE_MANIFEST.toml"
+]
+
+[scope]
+includes = [
+  "structural governance artifacts and constraints",
+  "adapter identity, scope, and compatibility claims",
+  "canonical encoding requirements for governance artifacts",
+  "structural dependency graphs among governance artifacts",
+  "structural governance actions over artifacts",
+  "structural provenance for governance actions and lifecycle events",
+  "versioning rules for governance artifacts and specifications",
+]
+excludes = [
+  "domain vocabularies",
+  "behavioral models",
+  "exchange or interaction mechanisms",
+  "causal explanations",
+  "epistemic evaluation",
+  "normative judgment or enforcement",
+  "interpretive explanation overlays",
+  "neutral substrate identity or persistence rules",
+  "graph evolution semantics",
+]
+
+
+[citation]
+cff = "CITATION.cff"
+preferred = "repo"
+bib_hint = "case2025-lean-gb"
+
+[traceability]
+identifier_map = "GovernanceBoundary/Spec/IdentifierMap.lean"

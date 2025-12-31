@@ -1,0 +1,16 @@
+{"version": "1.1.0",
+ "packagesDir": ".lake/packages",
+ "packages":
+ [{"url":
+   "https://github.com/structural-explainability/AccountableEntities.git",
+   "type": "git",
+   "subDir": null,
+   "scope": "",
+   "rev": "90b6977c74961ff6840e9caad6020365591feb5d",
+   "name": "AccountableEntities",
+   "manifestFile": "lake-manifest.json",
+   "inputRev": "main",
+   "inherited": false,
+   "configFile": "lakefile.toml"}],
+ "name": "EvolutionProtocol",
+ "lakeDir": ".lake"}

@@ -1,3 +1,5 @@
+-- Archived.
+-- Retired and no longer authoritative. See repository README.md.
 import GovernanceBoundary.Governance.AdapterManifest
 import GovernanceBoundary.Governance.ArtifactGovernanceProvenance
 import GovernanceBoundary.Governance.CanonicalEncodingReq
